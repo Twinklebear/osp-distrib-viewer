@@ -752,6 +752,8 @@ void runApp()
 
       //const auto tfcnTimeStamp = transferFcn->childrenLastModified();
 
+	  // TODO: We need to filter out mouse input events from ImGui if
+	  // we're not showing the GUI (need to wrap the imgui impl callbacks)
       if (showGUI) {
         ImGui_ImplGlfwGL3_NewFrame();
         ImGui::Text("Application average %.3f ms/frame (%.1f FPS)",
